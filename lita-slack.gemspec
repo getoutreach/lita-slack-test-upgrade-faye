@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "eventmachine"
-  spec.add_runtime_dependency "faraday"
+  spec.add_runtime_dependency "faraday", ">= 2.7.4"
   spec.add_runtime_dependency "faye-websocket", ">= 0.11.1"
   spec.add_runtime_dependency "lita", ">= 4.7.1"
   spec.add_runtime_dependency "multi_json"
