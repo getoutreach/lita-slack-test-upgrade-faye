@@ -103,7 +103,8 @@ module Lita
         end
 
         def websocket_options
-          options = { ping: 10 , tls: {verify_peer: false}}
+          options = { ping: 10 }
+          # options = { ping: 10 , tls: {verify_peer: false}}
           # options = { ping: 10 , tls: {root_cert_file: '/etc/ssl/certs/ca-certificates.crt'}}
           options[:proxy] = { :origin => config.proxy } if config.proxy
           options
