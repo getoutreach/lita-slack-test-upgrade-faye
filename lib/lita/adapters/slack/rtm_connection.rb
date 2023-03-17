@@ -104,7 +104,7 @@ module Lita
 
         def websocket_options
           options = { ping: 10 }
-          options[:tls] = { :root_cert_file => ['/usr/local/share/ca-certificates/slack-ca.pem'] }
+          options[:tls] = { :root_cert_file => ['/usr/local/share/ca-certificates/letsencrypt.pem'] }
           # options = { ping: 10 , tls: {verify_peer: false}}
           # options = { ping: 10 , tls: {root_cert_file: '/invalid/cert/path'}}
           # options = { ping: 10 , tls: {root_cert_file: '/etc/ssl/certs/ca-certificates.crt'}}
