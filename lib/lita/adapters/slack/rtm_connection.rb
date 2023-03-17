@@ -106,9 +106,9 @@ module Lita
           # options = { ping: 10 }
           # options = { ping: 10 , tls: {verify_peer: false}}
           # options = { ping: 10 , tls: {root_cert_file: '/invalid/cert/path'}}
-          # options = { ping: 10 , tls: {root_cert_file: '/etc/ssl/certs/ca-certificates.crt'}}
+          options = { ping: 10 , tls: {root_cert_file: '/etc/ssl/certs/ca-certificates.crt'}}
           # options = { ping: 10 , tls: {root_cert_file: '/usr/local/share/ca-certificates/slack-ca.pem'}}
-          options = { ping: 10 , tls: {root_cert_file: '/usr/local/share/ca-certificates/letsencrypt.pem'}}
+          # options = { ping: 10 , tls: {root_cert_file: '/usr/local/share/ca-certificates/letsencrypt.pem'}}
           options[:proxy] = { :origin => config.proxy } if config.proxy
           options
         end
